@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Constants {
+    static let coreDataEntity = "BalinkApp"
+    static let apiStringURL = "http://reqres.in/api/users"
+    static let cellIdentifier = "UserCell"
+    static let userEditPageSegue = "userEditPageSegue"
+    static let deleteCellActionTitle = "DELETE"
+}

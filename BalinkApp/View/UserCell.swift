@@ -6,18 +6,30 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class UserCell: UITableViewCell {
+class UserCell: SwipeTableViewCell {
 
+    // MARK: Properties
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setCell(user:User) {
+        guard let firstName = user.first_name,
+              let lastName = user.last_name,
+              let email = user.email,
+              let avatarString = user.avatar else {return}
+        nameLabel.text = "\(firstName) \(lastName)"
+        emailLabel.text = email
+        avatarImageView.loadImage(stringURL: avatarString)
     }
+
+    
     
 }

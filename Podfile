@@ -6,5 +6,6 @@ target 'BalinkApp' do
   # Pods for BalinkApp
   pod 'IQKeyboardManagerSwift'
   pod 'Alamofire'
+  pod 'SwipeCellKit'
 
 end

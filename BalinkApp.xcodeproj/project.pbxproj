@@ -12,6 +12,12 @@
 		D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31825C1313700CD1C95 /* UserCell.swift */; };
 		D608F31B25C1313700CD1C95 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D608F31925C1313700CD1C95 /* UserCell.xib */; };
 		D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31E25C1331A00CD1C95 /* Constants.swift */; };
+		D608F32225C140B400CD1C95 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F32125C140B400CD1C95 /* CoreDataManager.swift */; };
+		D608F32625C1491B00CD1C95 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F32525C1491B00CD1C95 /* ConnectionManager.swift */; };
+		D608F32925C1638500CD1C95 /* UserListPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F32825C1638500CD1C95 /* UserListPageViewController.swift */; };
+		D608F32C25C16EC500CD1C95 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F32B25C16EC500CD1C95 /* TableController.swift */; };
+		D608F33025C17C8A00CD1C95 /* ImagViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F32F25C17C8A00CD1C95 /* ImagViewExtension.swift */; };
+		D608F33325C185A100CD1C95 /* UserEditPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F33225C185A100CD1C95 /* UserEditPageViewController.swift */; };
 		D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDA25C12D3100C670C3 /* AppDelegate.swift */; };
 		D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */; };
 		D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDE25C12D3100C670C3 /* ViewController.swift */; };
@@ -29,6 +35,12 @@
 		D608F31825C1313700CD1C95 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		D608F31925C1313700CD1C95 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		D608F31E25C1331A00CD1C95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D608F32125C140B400CD1C95 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D608F32525C1491B00CD1C95 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		D608F32825C1638500CD1C95 /* UserListPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPageViewController.swift; sourceTree = "<group>"; };
+		D608F32B25C16EC500CD1C95 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		D608F32F25C17C8A00CD1C95 /* ImagViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagViewExtension.swift; sourceTree = "<group>"; };
+		D608F33225C185A100CD1C95 /* UserEditPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditPageViewController.swift; sourceTree = "<group>"; };
 		D6124BD725C12D3100C670C3 /* BalinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6124BDA25C12D3100C670C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,11 +84,20 @@
 		D608F31D25C132D800CD1C95 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D608F32E25C17C6300CD1C95 /* Extensions */,
 				D6124BE625C12D3200C670C3 /* Assets.xcassets */,
 				D6124BE825C12D3200C670C3 /* LaunchScreen.storyboard */,
 				D608F31E25C1331A00CD1C95 /* Constants.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D608F32E25C17C6300CD1C95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D608F32F25C17C8A00CD1C95 /* ImagViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D6124BCE25C12D3100C670C3 = {
@@ -116,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				D6124BDE25C12D3100C670C3 /* ViewController.swift */,
+				D608F32825C1638500CD1C95 /* UserListPageViewController.swift */,
+				D608F32B25C16EC500CD1C95 /* TableController.swift */,
+				D608F33225C185A100CD1C95 /* UserEditPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				D6124BE325C12D3100C670C3 /* BalinkApp.xcdatamodeld */,
+				D608F32125C140B400CD1C95 /* CoreDataManager.swift */,
 				D608F31525C1311900CD1C95 /* UserModel.swift */,
 			);
 			path = Model;
@@ -142,6 +167,7 @@
 		D6124BF525C12DFC00C670C3 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				D608F32525C1491B00CD1C95 /* ConnectionManager.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -263,10 +289,16 @@
 			files = (
 				D6124BE525C12D3100C670C3 /* BalinkApp.xcdatamodeld in Sources */,
 				D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */,
+				D608F32C25C16EC500CD1C95 /* TableController.swift in Sources */,
 				D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */,
 				D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */,
+				D608F32925C1638500CD1C95 /* UserListPageViewController.swift in Sources */,
+				D608F32625C1491B00CD1C95 /* ConnectionManager.swift in Sources */,
 				D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */,
+				D608F33325C185A100CD1C95 /* UserEditPageViewController.swift in Sources */,
+				D608F33025C17C8A00CD1C95 /* ImagViewExtension.swift in Sources */,
 				D608F31625C1311900CD1C95 /* UserModel.swift in Sources */,
+				D608F32225C140B400CD1C95 /* CoreDataManager.swift in Sources */,
 				D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
