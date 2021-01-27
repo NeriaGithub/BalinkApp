@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4F7650FE5EBC1C0B37260C53 /* Pods_BalinkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8517E2EFC052F29F31057AF5 /* Pods_BalinkApp.framework */; };
+		D608F31625C1311900CD1C95 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31525C1311900CD1C95 /* UserModel.swift */; };
+		D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31825C1313700CD1C95 /* UserCell.swift */; };
+		D608F31B25C1313700CD1C95 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D608F31925C1313700CD1C95 /* UserCell.xib */; };
 		D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDA25C12D3100C670C3 /* AppDelegate.swift */; };
 		D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */; };
 		D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDE25C12D3100C670C3 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 		1B3847E246BEAA5CCABE88FA /* Pods-BalinkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalinkApp.debug.xcconfig"; path = "Target Support Files/Pods-BalinkApp/Pods-BalinkApp.debug.xcconfig"; sourceTree = "<group>"; };
 		77BFF7DF12315883A7FB21D0 /* Pods-BalinkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalinkApp.release.xcconfig"; path = "Target Support Files/Pods-BalinkApp/Pods-BalinkApp.release.xcconfig"; sourceTree = "<group>"; };
 		8517E2EFC052F29F31057AF5 /* Pods_BalinkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalinkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D608F31525C1311900CD1C95 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D608F31825C1313700CD1C95 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		D608F31925C1313700CD1C95 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		D6124BD725C12D3100C670C3 /* BalinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6124BDA25C12D3100C670C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +64,6 @@
 				1B3847E246BEAA5CCABE88FA /* Pods-BalinkApp.debug.xcconfig */,
 				77BFF7DF12315883A7FB21D0 /* Pods-BalinkApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -108,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				D6124BE025C12D3100C670C3 /* Main.storyboard */,
+				D608F31825C1313700CD1C95 /* UserCell.swift */,
+				D608F31925C1313700CD1C95 /* UserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D6124BE325C12D3100C670C3 /* BalinkApp.xcdatamodeld */,
+				D608F31525C1311900CD1C95 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D608F31B25C1313700CD1C95 /* UserCell.xib in Resources */,
 				D6124BEA25C12D3200C670C3 /* LaunchScreen.storyboard in Resources */,
 				D6124BE725C12D3200C670C3 /* Assets.xcassets in Resources */,
 				D6124BE225C12D3100C670C3 /* Main.storyboard in Resources */,
@@ -243,7 +252,9 @@
 			files = (
 				D6124BE525C12D3100C670C3 /* BalinkApp.xcdatamodeld in Sources */,
 				D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */,
+				D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */,
 				D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */,
+				D608F31625C1311900CD1C95 /* UserModel.swift in Sources */,
 				D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
