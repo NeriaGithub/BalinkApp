@@ -11,6 +11,7 @@
 		D608F31625C1311900CD1C95 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31525C1311900CD1C95 /* UserModel.swift */; };
 		D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31825C1313700CD1C95 /* UserCell.swift */; };
 		D608F31B25C1313700CD1C95 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D608F31925C1313700CD1C95 /* UserCell.xib */; };
+		D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D608F31E25C1331A00CD1C95 /* Constants.swift */; };
 		D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDA25C12D3100C670C3 /* AppDelegate.swift */; };
 		D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */; };
 		D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6124BDE25C12D3100C670C3 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		D608F31525C1311900CD1C95 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		D608F31825C1313700CD1C95 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		D608F31925C1313700CD1C95 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		D608F31E25C1331A00CD1C95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D6124BD725C12D3100C670C3 /* BalinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6124BDA25C12D3100C670C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6124BDC25C12D3100C670C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D608F31D25C132D800CD1C95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6124BE625C12D3200C670C3 /* Assets.xcassets */,
+				D6124BE825C12D3200C670C3 /* LaunchScreen.storyboard */,
+				D608F31E25C1331A00CD1C95 /* Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D6124BCE25C12D3100C670C3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +106,7 @@
 				D6124BF425C12D5000C670C3 /* Model */,
 				D6124BF325C12D4B00C670C3 /* View */,
 				D6124BF225C12D4600C670C3 /* Controller */,
-				D6124BE625C12D3200C670C3 /* Assets.xcassets */,
-				D6124BE825C12D3200C670C3 /* LaunchScreen.storyboard */,
+				D608F31D25C132D800CD1C95 /* Supporting Files */,
 				D6124BEB25C12D3200C670C3 /* Info.plist */,
 			);
 			path = BalinkApp;
@@ -254,6 +265,7 @@
 				D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */,
 				D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */,
 				D6124BDB25C12D3100C670C3 /* AppDelegate.swift in Sources */,
+				D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */,
 				D608F31625C1311900CD1C95 /* UserModel.swift in Sources */,
 				D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */,
 			);
