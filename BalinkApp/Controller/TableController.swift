@@ -35,7 +35,7 @@ class TableController: NSObject {
     }
 }
 
-// MARK: Table View data source method
+// MARK: Table View Data Source methods
 
 extension TableController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,7 +57,7 @@ extension TableController:UITableViewDelegate{
     }
 }
 
-// MARK: Swipe Table View Cell Delegate methods
+// MARK: Swipe Table View Cell Delegate method
 extension TableController:SwipeTableViewCellDelegate{
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         guard orientation == .right else {return nil}

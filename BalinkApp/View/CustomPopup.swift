@@ -10,7 +10,8 @@ import UIKit
 
 
 class CustomPopup: BasePopup {
-//MARK:
+    
+// MARK:Properties
     @IBOutlet var contentView: UIView!
     
     override init(frame: CGRect) {
