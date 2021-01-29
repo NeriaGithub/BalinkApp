@@ -20,6 +20,8 @@ class UserCell: SwipeTableViewCell {
         // Initialization code
     }
     
+    
+    
     func setCell(user:User) {
         guard let firstName = user.first_name,
               let lastName = user.last_name,

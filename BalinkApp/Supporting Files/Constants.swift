@@ -13,4 +13,5 @@ struct Constants {
     static let cellIdentifier = "UserCell"
     static let userEditPageSegue = "userEditPageSegue"
     static let deleteCellActionTitle = "DELETE"
+    static let customPopupName = "CustomPopup"
 }

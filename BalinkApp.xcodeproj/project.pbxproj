@@ -25,6 +25,10 @@
 		D6124BE525C12D3100C670C3 /* BalinkApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6124BE325C12D3100C670C3 /* BalinkApp.xcdatamodeld */; };
 		D6124BE725C12D3200C670C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6124BE625C12D3200C670C3 /* Assets.xcassets */; };
 		D6124BEA25C12D3200C670C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6124BE825C12D3200C670C3 /* LaunchScreen.storyboard */; };
+		D6EB8BCE25C31C9200542194 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8BCD25C31C9200542194 /* PopupManager.swift */; };
+		D6EB8BD125C31CAF00542194 /* BasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8BD025C31CAF00542194 /* BasePopup.swift */; };
+		D6EB8BD625C31DD100542194 /* CustomPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EB8BD525C31DD100542194 /* CustomPopup.xib */; };
+		D6EB8BD925C31DDD00542194 /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8BD825C31DDD00542194 /* CustomPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		D6124BE625C12D3200C670C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6124BE925C12D3200C670C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6124BEB25C12D3200C670C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EB8BCD25C31C9200542194 /* PopupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		D6EB8BD025C31CAF00542194 /* BasePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopup.swift; sourceTree = "<group>"; };
+		D6EB8BD525C31DD100542194 /* CustomPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPopup.xib; sourceTree = "<group>"; };
+		D6EB8BD825C31DDD00542194 /* CustomPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 				D6124BE025C12D3100C670C3 /* Main.storyboard */,
 				D608F31825C1313700CD1C95 /* UserCell.swift */,
 				D608F31925C1313700CD1C95 /* UserCell.xib */,
+				D6EB8BCD25C31C9200542194 /* PopupManager.swift */,
+				D6EB8BD025C31CAF00542194 /* BasePopup.swift */,
+				D6EB8BD825C31DDD00542194 /* CustomPopup.swift */,
+				D6EB8BD525C31DD100542194 /* CustomPopup.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EB8BD625C31DD100542194 /* CustomPopup.xib in Resources */,
 				D608F31B25C1313700CD1C95 /* UserCell.xib in Resources */,
 				D6124BEA25C12D3200C670C3 /* LaunchScreen.storyboard in Resources */,
 				D6124BE725C12D3200C670C3 /* Assets.xcassets in Resources */,
@@ -295,7 +308,10 @@
 				D608F32925C1638500CD1C95 /* UserListPageViewController.swift in Sources */,
 				D608F32625C1491B00CD1C95 /* ConnectionManager.swift in Sources */,
 				D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */,
+				D6EB8BD125C31CAF00542194 /* BasePopup.swift in Sources */,
+				D6EB8BCE25C31C9200542194 /* PopupManager.swift in Sources */,
 				D608F33325C185A100CD1C95 /* UserEditPageViewController.swift in Sources */,
+				D6EB8BD925C31DDD00542194 /* CustomPopup.swift in Sources */,
 				D608F33025C17C8A00CD1C95 /* ImagViewExtension.swift in Sources */,
 				D608F31625C1311900CD1C95 /* UserModel.swift in Sources */,
 				D608F32225C140B400CD1C95 /* CoreDataManager.swift in Sources */,

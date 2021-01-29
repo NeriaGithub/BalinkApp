@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-// MARK: Singleton CoreDataManager
+// MARK: Core Data Manager Singleton 
 class CoreDataManager {
     //MARK: Properties
     static let shared = CoreDataManager()

@@ -16,6 +16,34 @@ class ViewController: UIViewController {
        
     }
 
+    @IBAction func testTap(_ sender: UIButton) {
+        PopupManager.shared.buildPopup(popupType: .customPopup) { [weak self](popup) in
+            guard let myPopup = popup,
+                  let strongSelf = self else { return  }
+            myPopup.delegate = self
+            myPopup.popupConstraints(parentView: strongSelf.view)
+        }
+    }
+}
 
+extension ViewController:BasePopupDelegate{
+    func didTapOK() {
+        print("OK")
+    }
+    
+    func didTapCancel() {
+        PopupManager.shared.removePopup { [weak self](type) in
+            guard let strongSelf = self else { return }
+            for view in strongSelf.view.subviews{
+                if let myPopup = view as? BasePopup {
+                    if myPopup.popupType == PopupManager.shared.popupType {
+                        myPopup.removeFromSuperview()
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }
 

@@ -19,7 +19,7 @@ class UserListPageViewController: UIViewController {
     }
     private func setUsersInTableView(){
         if CoreDataManager.shared.coreDataIsEmpty(){
-            ConnectionManager().getRequest { [weak self]
+            ConnectionManager.getRequest { [weak self]
                 (result:Result<DataModel,APIError>) in
                 guard let strongSelf = self else { return}
                 switch result {

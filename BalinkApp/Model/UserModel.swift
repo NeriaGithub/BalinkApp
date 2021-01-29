@@ -7,10 +7,10 @@
 
 import Foundation
 
+//MARK: User Model
 struct DataModel:Decodable {
     let data:[UserModel]
 }
-
 
 struct UserModel:Decodable {
     let id:Int

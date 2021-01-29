@@ -21,7 +21,7 @@ struct ConnectionManager {
     
     //MARK: Connection Manager methods
     
-    func getRequest<T:Decodable>(stringURL:String = Constants.apiStringURL,completionHandler:@escaping(Result<T,APIError>)->()) {
+   static  func getRequest<T:Decodable>(stringURL:String = Constants.apiStringURL,completionHandler:@escaping(Result<T,APIError>)->()) {
         guard let url = URL(string: stringURL) else {return}
         AF.request(url).responseData { (response) in
             if let data = response.data{
@@ -37,7 +37,7 @@ struct ConnectionManager {
         }
     }
     
-    func postRequest(stringURL:String = Constants.apiStringURL, params:Parameters, completionHandler:@escaping(Bool)->())  {
+  static  func postRequest(stringURL:String = Constants.apiStringURL, params:Parameters, completionHandler:@escaping(Bool)->())  {
         guard let url = URL(string: stringURL) else {return}
         AF.request(url,method: .post,parameters: params,encoding: JSONEncoding.default).responseJSON { (response) in
             guard let statusCode = response.response?.statusCode else { return completionHandler(false) }
@@ -49,7 +49,7 @@ struct ConnectionManager {
         }
     }
     
-    func deleteRequest(stringURL:String = Constants.apiStringURL, completionHandler:@escaping(Bool)->()) {
+  static  func deleteRequest(stringURL:String = Constants.apiStringURL, completionHandler:@escaping(Bool)->()) {
         guard let url = URL(string: stringURL) else {return}
         AF.request(url,method: .delete).responseJSON { (response) in
             guard let statusCode = response.response?.statusCode else { return completionHandler(false) }

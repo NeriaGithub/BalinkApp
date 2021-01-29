@@ -50,7 +50,7 @@ extension TableController:UITableViewDataSource{
     }
     
 }
-
+// MARK: Table View Delegate method
 extension TableController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelectRow(user: CoreDataManager.shared.users[indexPath.row])
