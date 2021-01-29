@@ -37,9 +37,10 @@ struct ConnectionManager {
         }
     }
     
-  static  func postRequest(stringURL:String = Constants.apiStringURL, params:Parameters, completionHandler:@escaping(Bool)->())  {
+    static  func postRequest(stringURL:String = Constants.apiStringURL, params:[String:Any], completionHandler:@escaping(Bool)->())  {
+        let parameters:Parameters = params
         guard let url = URL(string: stringURL) else {return}
-        AF.request(url,method: .post,parameters: params,encoding: JSONEncoding.default).responseJSON { (response) in
+        AF.request(url,method: .post,parameters: parameters,encoding: JSONEncoding.default).responseJSON { (response) in
             guard let statusCode = response.response?.statusCode else { return completionHandler(false) }
             if statusCode == StatusCode.ok.rawValue {
                 completionHandler(true)

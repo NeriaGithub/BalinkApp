@@ -9,8 +9,8 @@ import UIKit
 
 // MARK: Base Popup Delegate
 protocol BasePopupDelegate:class {
-    func didTapOK()
-    func didTapCancel()
+    func didTapOK(callback:String)
+    func didTapCancel(callback:String)
 }
 
 class BasePopup: UIView {

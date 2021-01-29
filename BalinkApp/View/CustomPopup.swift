@@ -33,10 +33,10 @@ class CustomPopup: BasePopup {
     
     //MARK: BActions methods
     @IBAction func okButtonPressed(_ sender: UIButton) {
-        delegate?.didTapOK()
+        delegate?.didTapOK(callback: "OK Button Callback")
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
-        delegate?.didTapCancel()
+        delegate?.didTapCancel(callback: "Cancel Button Callback")
     }
 }
