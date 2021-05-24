@@ -70,6 +70,5 @@ extension TableController:SwipeTableViewCellDelegate{
         return [deleteAction]
 
     }
-    
 }
 

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-xn-2LO" userLabel="Main View">
-                                <rect key="frame" x="96.666666666666686" y="257.66666666666669" width="220.66666666666663" height="220.66666666666669"/>
+                                <rect key="frame" x="96.666666666666671" y="257.66666666666669" width="220.66666666666663" height="220.66666666666669"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sS-dC-A3K">
                                         <rect key="frame" x="50.333333333333329" y="93.333333333333314" width="119.99999999999999" height="34"/>
@@ -35,36 +35,23 @@
                                     <constraint firstItem="9sS-dC-A3K" firstAttribute="centerX" secondItem="8Ct-xn-2LO" secondAttribute="centerX" id="l3Y-MZ-bwT"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eg5-yl-yMG">
-                                <rect key="frame" x="131.66666666666666" y="10" width="150.99999999999997" height="72"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-IT-OLW">
-                                        <rect key="frame" x="0.33333333333334281" y="0.0" width="150" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="ShowPopupButton"/>
-                                        <connections>
-                                            <action selector="showPopupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehG-BC-5G5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XQ-ru-P64">
-                                        <rect key="frame" x="0.0" y="38" width="151" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="ClosePopupButton"/>
-                                        <connections>
-                                            <action selector="closePopupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAW-Yw-d5Y"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-IT-OLW">
+                                <rect key="frame" x="132" y="10" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="ShowPopupButton"/>
+                                <connections>
+                                    <action selector="showPopupAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhJ-j8-Dhn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8Ct-xn-2LO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9vP-cU-RvA"/>
+                            <constraint firstItem="c6w-IT-OLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AA5-YW-GPK"/>
+                            <constraint firstItem="c6w-IT-OLW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="HzK-OJ-jeU"/>
                             <constraint firstItem="8Ct-xn-2LO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NMa-Yi-QDh"/>
-                            <constraint firstItem="eg5-yl-yMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nm1-1X-94b"/>
                             <constraint firstItem="8Ct-xn-2LO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="dV2-7O-rR9"/>
-                            <constraint firstItem="eg5-yl-yMG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hhL-xA-Zbt"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -72,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-100" y="74"/>
         </scene>
-        <!--User List Page View Controller-->
+        <!--User List-->
         <scene sceneID="QTk-Wx-Vku">
             <objects>
                 <viewController id="SPB-V7-3XF" customClass="UserListPageViewController" customModule="BalinkApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +81,7 @@
                             <constraint firstItem="H4p-Gm-cMY" firstAttribute="bottom" secondItem="ASV-mk-J7w" secondAttribute="bottom" id="olu-xf-AmA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YKp-ur-B2T"/>
+                    <navigationItem key="navigationItem" title="User List" id="YKp-ur-B2T"/>
                     <connections>
                         <outlet property="userListTableView" destination="ASV-mk-J7w" id="AUE-Ck-xAn"/>
                         <segue destination="XR4-aV-gKL" kind="show" identifier="userEditPageSegue" id="ebl-m5-Nb4"/>

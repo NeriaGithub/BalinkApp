@@ -25,6 +25,13 @@
 		D6124BE525C12D3100C670C3 /* BalinkApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6124BE325C12D3100C670C3 /* BalinkApp.xcdatamodeld */; };
 		D6124BE725C12D3200C670C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6124BE625C12D3200C670C3 /* Assets.xcassets */; };
 		D6124BEA25C12D3200C670C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6124BE825C12D3200C670C3 /* LaunchScreen.storyboard */; };
+		D69088DC25C853120089D663 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69088DB25C853120089D663 /* Alerts.storyboard */; };
+		D69088DF25C857920089D663 /* PopupAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69088DE25C857920089D663 /* PopupAlertController.swift */; };
+		D69088E325C85D3A0089D663 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69088E225C85D3A0089D663 /* AlertButton.swift */; };
+		D69088E625C85E530089D663 /* AlertPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69088E525C85E530089D663 /* AlertPayload.swift */; };
+		D69088EA25C869440089D663 /* AlertPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69088E925C869440089D663 /* AlertPopupUtils.swift */; };
+		D6CA3CBC25C91FA1008758DC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3CBB25C91FA1008758DC /* Message.swift */; };
+		D6CA3CC425C933F2008758DC /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3CC325C933F2008758DC /* AlertManager.swift */; };
 		D6EB8BCE25C31C9200542194 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8BCD25C31C9200542194 /* PopupManager.swift */; };
 		D6EB8BD125C31CAF00542194 /* BasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EB8BD025C31CAF00542194 /* BasePopup.swift */; };
 		D6EB8BD625C31DD100542194 /* CustomPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EB8BD525C31DD100542194 /* CustomPopup.xib */; };
@@ -54,6 +61,13 @@
 		D6124BE625C12D3200C670C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6124BE925C12D3200C670C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6124BEB25C12D3200C670C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69088DB25C853120089D663 /* Alerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerts.storyboard; sourceTree = "<group>"; };
+		D69088DE25C857920089D663 /* PopupAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlertController.swift; sourceTree = "<group>"; };
+		D69088E225C85D3A0089D663 /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		D69088E525C85E530089D663 /* AlertPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPayload.swift; sourceTree = "<group>"; };
+		D69088E925C869440089D663 /* AlertPopupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopupUtils.swift; sourceTree = "<group>"; };
+		D6CA3CBB25C91FA1008758DC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D6CA3CC325C933F2008758DC /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D6EB8BCD25C31C9200542194 /* PopupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		D6EB8BD025C31CAF00542194 /* BasePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopup.swift; sourceTree = "<group>"; };
 		D6EB8BD525C31DD100542194 /* CustomPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPopup.xib; sourceTree = "<group>"; };
@@ -148,6 +162,7 @@
 				D608F32825C1638500CD1C95 /* UserListPageViewController.swift */,
 				D608F32B25C16EC500CD1C95 /* TableController.swift */,
 				D608F33225C185A100CD1C95 /* UserEditPageViewController.swift */,
+				D69088DE25C857920089D663 /* PopupAlertController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 				D6EB8BD025C31CAF00542194 /* BasePopup.swift */,
 				D6EB8BD825C31DDD00542194 /* CustomPopup.swift */,
 				D6EB8BD525C31DD100542194 /* CustomPopup.xib */,
+				D69088DA25C8529A0089D663 /* Popup Alert */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +188,7 @@
 				D6124BE325C12D3100C670C3 /* BalinkApp.xcdatamodeld */,
 				D608F32125C140B400CD1C95 /* CoreDataManager.swift */,
 				D608F31525C1311900CD1C95 /* UserModel.swift */,
+				D6CA3CBB25C91FA1008758DC /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +199,18 @@
 				D608F32525C1491B00CD1C95 /* ConnectionManager.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		D69088DA25C8529A0089D663 /* Popup Alert */ = {
+			isa = PBXGroup;
+			children = (
+				D69088DB25C853120089D663 /* Alerts.storyboard */,
+				D69088E225C85D3A0089D663 /* AlertButton.swift */,
+				D69088E525C85E530089D663 /* AlertPayload.swift */,
+				D69088E925C869440089D663 /* AlertPopupUtils.swift */,
+				D6CA3CC325C933F2008758DC /* AlertManager.swift */,
+			);
+			path = "Popup Alert";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +277,7 @@
 				D6124BEA25C12D3200C670C3 /* LaunchScreen.storyboard in Resources */,
 				D6124BE725C12D3200C670C3 /* Assets.xcassets in Resources */,
 				D6124BE225C12D3100C670C3 /* Main.storyboard in Resources */,
+				D69088DC25C853120089D663 /* Alerts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6124BE525C12D3100C670C3 /* BalinkApp.xcdatamodeld in Sources */,
+				D6CA3CBC25C91FA1008758DC /* Message.swift in Sources */,
 				D6124BDF25C12D3100C670C3 /* ViewController.swift in Sources */,
 				D608F32C25C16EC500CD1C95 /* TableController.swift in Sources */,
 				D608F31A25C1313700CD1C95 /* UserCell.swift in Sources */,
@@ -308,13 +339,18 @@
 				D608F32925C1638500CD1C95 /* UserListPageViewController.swift in Sources */,
 				D608F32625C1491B00CD1C95 /* ConnectionManager.swift in Sources */,
 				D608F31F25C1331A00CD1C95 /* Constants.swift in Sources */,
+				D69088E325C85D3A0089D663 /* AlertButton.swift in Sources */,
 				D6EB8BD125C31CAF00542194 /* BasePopup.swift in Sources */,
+				D69088E625C85E530089D663 /* AlertPayload.swift in Sources */,
+				D6CA3CC425C933F2008758DC /* AlertManager.swift in Sources */,
 				D6EB8BCE25C31C9200542194 /* PopupManager.swift in Sources */,
 				D608F33325C185A100CD1C95 /* UserEditPageViewController.swift in Sources */,
 				D6EB8BD925C31DDD00542194 /* CustomPopup.swift in Sources */,
 				D608F33025C17C8A00CD1C95 /* ImagViewExtension.swift in Sources */,
+				D69088EA25C869440089D663 /* AlertPopupUtils.swift in Sources */,
 				D608F31625C1311900CD1C95 /* UserModel.swift in Sources */,
 				D608F32225C140B400CD1C95 /* CoreDataManager.swift in Sources */,
+				D69088DF25C857920089D663 /* PopupAlertController.swift in Sources */,
 				D6124BDD25C12D3100C670C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -447,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

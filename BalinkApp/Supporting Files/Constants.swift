@@ -14,4 +14,6 @@ struct Constants {
     static let userEditPageSegue = "userEditPageSegue"
     static let deleteCellActionTitle = "DELETE"
     static let customPopupName = "CustomPopup"
+    static let storyboardAlertsName = "Alerts"
+    static let popupAlertViewControllerIdentifier = "PopupAlert"
 }

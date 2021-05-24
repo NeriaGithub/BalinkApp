@@ -9,48 +9,22 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+        AlertManager.shared.messages.append(Message(title: "First Title", message: "First Message"))
+        AlertManager.shared.messages.append(Message(title: "Second Title", message: "Second Message"))
+        AlertManager.shared.messages.append(Message(title: "Third Title", message: "Third Message"))
     }
-
+    
     // MARK: IBActions
-    @IBAction func showPopupPressed(_ sender: UIButton) {
-        PopupManager.shared.buildPopup(popupType: .customPopup) { [weak self](popup) in
-            guard let myPopup = popup,
-                  let strongSelf = self else { return  }
-            myPopup.delegate = self
-            myPopup.popupConstraints(parentView: strongSelf.view)
-        }
+    @IBAction func showPopupAlert(_ sender: UIButton) {
+        AlertManager.shared.showAlert(parentViewController: self)
+        
     }
     
-    @IBAction func closePopupPressed(_ sender: UIButton) {
-        PopupManager.shared.removePopup { [weak self](type) in
-            guard let strongSelf = self else { return }
-            for view in strongSelf.view.subviews{
-                if let myPopup = view as? BasePopup {
-                    if myPopup.popupType == PopupManager.shared.popupType {
-                        myPopup.removeFromSuperview()
-                    }
-                }
-            }
-        }
-    }
+
     
 }
-//MARK:Base Popup Delegate methods
-extension ViewController:BasePopupDelegate{
-    func didTapOK(callback: String) {
-        print(callback)
-    }
-    
-    func didTapCancel(callback: String) {
-        print(callback)
-    }
-    
-    
-    
-}
+
 
