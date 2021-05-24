@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Force Xcode 12
-      run: xcodebuild -project 'BalinkApp.xcodeproj' -scheme 'BalinkApp' -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=14.0' clean test
+      run: xcodebuild -project 'BalinkApp.xcodeproj' -scheme 'BalinkApp' -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=14.0' 
     - name: BalinkApp
       run: xcodebuild -project 'BalinkApp.xcodeproj' -scheme 'BalinkApp' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALLOWED=NO
